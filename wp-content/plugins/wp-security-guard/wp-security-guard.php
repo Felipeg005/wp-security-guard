@@ -49,6 +49,7 @@ function deactivate_WP_Security_Guard() {
 	WP_Security_Guard_Deactivator::deactivate();
 }
 
+
 register_activation_hook( __FILE__, 'activate_WP_Security_Guard' );
 register_deactivation_hook( __FILE__, 'deactivate_WP_Security_Guard' );
 
